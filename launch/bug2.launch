@@ -1,0 +1,8 @@
+<launch>
+	<node name="stage" pkg="stage_ros" type="stageros"
+	      args="$(find lab2)/world/playground.world" />
+	<node name="subscribe" pkg="lab2" type="subscribe"
+	        />
+	<node name="navigation" pkg="lab2" type="navigation"
+	       output="screen" />
+</launch>
